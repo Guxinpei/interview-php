@@ -1,7 +1,7 @@
 # interview php
 
 ## see
-[base-design.md](src/doc/base-design.md)
+[base-design.md](doc/base-design.md)
 
 ## 产品包装信息
 长: 68 cm
