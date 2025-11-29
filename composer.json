@@ -1,0 +1,23 @@
+{
+    "name": "roog/kmc",
+    "description": "面试题",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^12.4",
+        "illuminate/pipeline": "^12.40"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Roog\\Kmc\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Roog"
+        }
+    ],
+    "require": {
+      "ext-bcmath": "*"
+    }
+}

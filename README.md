@@ -1,5 +1,8 @@
 # interview php
 
+## see
+[base-design.md](src/doc/base-design.md)
+
 ## 产品包装信息
 长: 68 cm
 
@@ -42,8 +45,6 @@ class Main()
     }
 }
 
-$obj = new Main();
-var_dump($obj->test(68, 70, 60, 23));
 ```
 例如:
 - 输入[68, 70, 60, 23], 输出[AHS-WEIGHT, AHS-SIZE]
@@ -52,5 +53,3 @@ var_dump($obj->test(68, 70, 60, 23));
 - 输入[113, 64, 42.5, 35.85], 输出[OVERSIZE]
 - 输入[114.5, 17, 51.5, 16.5], 输出[]
 
-
-> 作答结果请发给 HR 
