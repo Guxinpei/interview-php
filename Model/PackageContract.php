@@ -64,4 +64,22 @@ interface PackageContract
      * @return Length 返回周长的长度。
      */
     public function getPerimeter(): Length;
+
+    /**
+     * 获取体积信息方法。
+     *
+     * 此方法用于返回对象的体积信息。
+     *
+     * @return string 尺寸信息 , 平方厘米
+     */
+    public function getVolume(): string;
+
+    /**
+     * 获取体积重量信息方法。
+     *
+     * 此方法用于返回对象的体积信息。
+     *
+     * @return Weight 体积重量
+     */
+    public function getVolumeWeight(): Weight;
 }
