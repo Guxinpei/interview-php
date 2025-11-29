@@ -11,6 +11,9 @@ use Roog\Kmc\Lib\Converse\WeightUnit\Weight;
  */
 readonly class Package implements PackageContract
 {
+
+    public const int SCALE = 5;
+
     /**
      * 创建包裹对象。
      * @param Weight $weight 对象的重量。
@@ -77,7 +80,7 @@ readonly class Package implements PackageContract
             $this->width->getNumber(),
             $this->height->getNumber()
         );
-        $fullPerimeter = bcmul($halfPerimeter , '2');
+        $fullPerimeter = bcmul($halfPerimeter , '2',self::SCALE);
         return new Length($fullPerimeter,LengthUnit::CM);
     }
 }

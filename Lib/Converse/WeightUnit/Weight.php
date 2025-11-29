@@ -20,6 +20,11 @@ class Weight implements WeightContract
             throw new \InvalidArgumentException('重量必须为数字。');
         }
 
+        //检查重量是否小于0
+        if ($this->number < 0) {
+            throw new \InvalidArgumentException('长度不能小于0。');
+        }
+
         //转换为String的目的是方便bcmath操作
         $this->number = (string) $this->number;
     }

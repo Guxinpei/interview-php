@@ -22,6 +22,10 @@ class Length implements LengthContract
             throw new \InvalidArgumentException('长度必须为数字。');
         }
 
+        if ($this->number < 0) {
+            throw new \InvalidArgumentException('长度不能小于0。');
+        }
+
         //转换为String的目的是方便bcmath操作
         $this->number = (string) $this->number;
     }
